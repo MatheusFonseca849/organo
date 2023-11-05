@@ -1,6 +1,6 @@
 import { StyledHeader } from "./header"
 
-export const Header = () => {
+const Header = () => {
 
     return (
 
@@ -21,3 +21,5 @@ export const Header = () => {
 
 
 }
+
+export default Header

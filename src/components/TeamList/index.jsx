@@ -1,6 +1,6 @@
-import { Team } from "../Team";
+import Team from "../Team";
 
-export const TeamList = () => {
+const TeamList = () => {
 
     return (
 
@@ -15,3 +15,5 @@ export const TeamList = () => {
     )
 
 }
+
+export default TeamList

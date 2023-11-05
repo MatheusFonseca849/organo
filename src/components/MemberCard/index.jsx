@@ -9,6 +9,7 @@ export const MemberCard = () => {
             <div className="memberInfo">
                 <h4>Member Name</h4>
                 <span>Member Job</span>
+            
             </div>
         </li>
 

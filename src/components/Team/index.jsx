@@ -1,6 +1,6 @@
-import { MemberCard } from "../MemberCard";
+import MemberCard from "../MemberCard";
 
-export const Team = () => {
+const Team = () => {
 
     return (
 
@@ -18,3 +18,5 @@ export const Team = () => {
 
 
 }
+
+export default Team

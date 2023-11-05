@@ -1,5 +1,5 @@
 
-export const MemberCard = () => {
+const MemberCard = () => {
 
     return (
         <li className="MemberCard">
@@ -16,3 +16,5 @@ export const MemberCard = () => {
     )
 
 }
+
+export default MemberCard

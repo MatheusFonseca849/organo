@@ -1,9 +1,10 @@
-export const Header = () => {
+import { StyledHeader } from "./header"
 
+export const Header = () => {
 
     return (
 
-        <header>
+        <StyledHeader>
             <div className="firstColumn">
                 <img src="./src/assets/logo.svg" alt="organo" />
                 <div className="headerTitle">
@@ -14,7 +15,7 @@ export const Header = () => {
             <div className="secondColumn">
                 <img src="./src/assets/headerImg.svg" alt="header image" />
             </div>
-        </header>
+        </StyledHeader>
 
     )
 

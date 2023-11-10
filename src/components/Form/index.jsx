@@ -1,7 +1,10 @@
 import Input from "../Input";
 import SelectInput from "../SelectInput";
+import { useState } from "react";
 
 const Form = () => {
+
+    const [name, setName] = useState('')
     
     const teams = [
         'Programação',
@@ -12,6 +15,8 @@ const Form = () => {
         'Mobile',
         'Inovação e Gestão'
     ]
+
+   
 
     return (
 

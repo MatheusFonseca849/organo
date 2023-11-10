@@ -1,12 +1,15 @@
 
-const Input = ({label, placeholder, type, required}) => {
+const Input = ({label, placeholder, type, required, name}) => {
+    
+
 
     return (
+
 
         <div>
 
             <label htmlFor={label}>{label}</label>
-            <input placeholder={placeholder} type={type} id={label} required={required}/>
+            <input value={name}  placeholder={placeholder} type={type} id={label} required={required}/>
 
         </div>
 

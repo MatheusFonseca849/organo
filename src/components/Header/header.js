@@ -6,6 +6,7 @@ background-color: var(--color-primary);
 display: flex;
 justify-content: space-between;
 padding: 16px 24px;
+width: 100%;
 
 .firstColumn{
 

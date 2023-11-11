@@ -39,6 +39,10 @@ main {
     height: fit-content;
     min-width: 320px;
     background-color: var(--color-grey-9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-main);
 }
 
 button {

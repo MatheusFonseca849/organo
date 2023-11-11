@@ -1,12 +1,12 @@
-
+import { StyledButton } from "./button.js";
 
 const Button = (props) => {
 
     return(
 
-        <button>
+        <StyledButton>
             {props.children}
-        </button>
+        </StyledButton>
 
     )
 

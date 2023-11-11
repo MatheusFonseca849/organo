@@ -1,3 +1,5 @@
+import { StyledInput } from "./input.js"
+
 const Input = ({label, placeholder, type, required, value, userInput}) => {
     
     const onType = (e) => {
@@ -8,12 +10,12 @@ const Input = ({label, placeholder, type, required, value, userInput}) => {
     return (
 
 
-        <div>
+        <StyledInput>
 
             <label htmlFor={label}>{label}</label>
             <input value={value} onChange={onType} placeholder={placeholder} type={type} id={label} required={required}/>
 
-        </div>
+        </StyledInput>
 
     )
 

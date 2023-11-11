@@ -1,15 +1,15 @@
 
-const SelectInput = (props) => {
+const SelectInput = ({teams, label, value, userInput}) => {
 
 return (
 <div>
-    <label htmlFor={props.label}>{props.label}</label>
+    <label htmlFor={label}>{label}</label>
 
-    <select id={props.label}>
+    <select id={label} onChange={e => userInput(e.target.value)}>
         <option value="placeholder">Selecione um time</option>
-        {props.teams.map((team) => {
+        {teams.map((team) => {
             return(
-                <option key={team} value={team.replace(/ /g, "").toLowerCase()}>{team}</option>
+                <option key={team}>{team}</option>
             )
         })}
     </select>

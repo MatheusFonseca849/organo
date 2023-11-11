@@ -1,7 +1,9 @@
-
-const Input = ({label, placeholder, type, required, name}) => {
+const Input = ({label, placeholder, type, required, value, userInput}) => {
     
-
+    const onType = (e) => {
+        userInput(e.target.value)
+        console.log(value)
+    }
 
     return (
 
@@ -9,7 +11,7 @@ const Input = ({label, placeholder, type, required, name}) => {
         <div>
 
             <label htmlFor={label}>{label}</label>
-            <input value={name}  placeholder={placeholder} type={type} id={label} required={required}/>
+            <input value={value} onChange={onType} placeholder={placeholder} type={type} id={label} required={required}/>
 
         </div>
 

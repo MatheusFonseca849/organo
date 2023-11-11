@@ -10,6 +10,7 @@ function App() {
   const submitNewMember = (newMember) => {
     console.log(newMember)
     setMembers([...members, newMember])
+    console.log(members)
   }
 
   return (

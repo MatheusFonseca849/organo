@@ -1,3 +1,4 @@
+import { StyledForm } from "./form.js";
 import Input from "../Input";
 import SelectInput from "../SelectInput";
 import Button from "../Button"
@@ -33,7 +34,7 @@ const Form = ({submitMember}) => {
     return (
 
 
-        <form onSubmit={submitForm}>
+        <StyledForm onSubmit={submitForm}>
             <h2>Preencha os dados para criar o card do colaborador.</h2>
 
             <Input value={name} userInput={value => setName(value)} label='Nome' placeholder="Digite o nome" type="text" required={true}/>
@@ -42,7 +43,7 @@ const Form = ({submitMember}) => {
             <SelectInput teams={teams} label="Time" value={team} userInput={value => setTeam(value)}/>
             <Button>Criar Card</Button>
             
-        </form>
+        </StyledForm>
 
     )
 

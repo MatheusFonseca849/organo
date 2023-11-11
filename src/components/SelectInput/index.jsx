@@ -1,8 +1,8 @@
-
+import { StyledSelectInput } from "./selectInput.js";
 const SelectInput = ({teams, label, value, userInput}) => {
 
 return (
-<div>
+<StyledSelectInput>
     <label htmlFor={label}>{label}</label>
 
     <select id={label} onChange={e => userInput(e.target.value)}>
@@ -13,7 +13,7 @@ return (
             )
         })}
     </select>
-</div>
+</StyledSelectInput>
 
 )
 

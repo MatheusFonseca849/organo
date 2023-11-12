@@ -1,11 +1,11 @@
 import MemberCard from "../MemberCard";
 
-const Team = () => {
+const Team = ({name}) => {
 
     return (
 
         <div className="teamList">
-            <h3>Nome do time</h3>
+            <h3>{name}</h3>
 
             <ul className="teamMembers">
 

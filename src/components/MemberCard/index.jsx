@@ -1,10 +1,10 @@
 
-const MemberCard = () => {
+const MemberCard = ({primaryColor}) => {
 
     return (
         <li className="MemberCard">
             <div className="imgContainer">
-                <img src="" alt="" />
+                <img src="./src/assets/mockImg.jpeg" alt="mockImg" />
             </div>
             <div className="memberInfo">
                 <h4>Member Name</h4>

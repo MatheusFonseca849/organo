@@ -1,18 +1,19 @@
+import { StyledTeam } from "./team.js";
 import MemberCard from "../MemberCard";
 
-const Team = ({name}) => {
+const Team = ({name, primaryColor, secondaryColor}) => {
 
     return (
 
-        <div className="teamList">
+        <StyledTeam primaryColor={primaryColor} secondaryColor={secondaryColor}>
             <h3>{name}</h3>
 
             <ul className="teamMembers">
 
-                <MemberCard></MemberCard>
+                {/* <MemberCard primaryColor={primaryColor}/> */}
 
             </ul>
-        </div>
+        </StyledTeam>
 
     )
 

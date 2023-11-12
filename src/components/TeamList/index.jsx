@@ -1,13 +1,21 @@
 import Team from "../Team";
 
-const TeamList = () => {
+const TeamList = ({teams, setTeams}) => {
 
     return (
 
         <section>
             <h2>Minha organização</h2>
 
-            <Team/>
+            {teams.map((team) => {
+
+                return (
+
+                    <Team name={team.name}/>
+
+                )
+
+            })}
             
 
         </section>

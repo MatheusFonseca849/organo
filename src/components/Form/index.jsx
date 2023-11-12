@@ -4,22 +4,12 @@ import SelectInput from "../SelectInput";
 import Button from "../Button"
 import { useState } from "react";
 
-const Form = ({submitMember}) => {
+const Form = ({submitMember, teamNames}) => {
 
     const [name, setName] = useState('')
     const [job, setJob] = useState('')
     const [image, setImage] = useState('')
     const [team, setTeam] = useState('')
-    
-    const teams = [
-        'Programação',
-        'Front End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
 
    const submitForm = (e) => {
     e.preventDefault()
@@ -40,7 +30,7 @@ const Form = ({submitMember}) => {
             <Input value={name} userInput={value => setName(value)} label='Nome' placeholder="Digite o nome" type="text" required={true}/>
             <Input value={job} userInput={value => setJob(value)} label='Cargo' placeholder="Digite o cargo" type="text" required={true}/>
             <Input value={image} userInput={value => setImage(value)} label='Imagem' placeholder="Digite o endereço da imagem" type="text" required={true}/>
-            <SelectInput teams={teams} label="Time" value={team} userInput={value => setTeam(value)}/>
+            <SelectInput teams={teamNames} label="Time" value={team} userInput={value => setTeam(value)}/>
             <Button>Criar Card</Button>
             
         </StyledForm>

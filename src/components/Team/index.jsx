@@ -10,7 +10,7 @@ const Team = ({name, primaryColor, secondaryColor}) => {
 
             <ul className="teamMembers">
 
-                {/* <MemberCard primaryColor={primaryColor}/> */}
+                <MemberCard primaryColor={primaryColor}/>
 
             </ul>
         </StyledTeam>

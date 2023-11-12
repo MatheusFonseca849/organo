@@ -3,9 +3,10 @@ import { styled } from "styled-components";
 export const StyledTeam = styled.div`
 text-align: center;
 background-color: ${({secondaryColor}) => secondaryColor};
-height: 35vh;
+height: 40vh;
 width: 100vw;
-padding: 24px 0;
+padding: 24px 16px;
+
 
 h3{
 
@@ -17,9 +18,8 @@ h3{
 
 ul{
 
-    background-color: var(--color-grey-5);
     width: 100%;
-    height: 120px;
+    height: fit-content;
     display: grid;
     grid-template-columns: 1;
     gap: 12px;

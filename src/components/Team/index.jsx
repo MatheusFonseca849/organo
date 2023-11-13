@@ -6,7 +6,12 @@ const Team = ({name, primaryColor, secondaryColor}) => {
     return (
 
         <StyledTeam primaryColor={primaryColor} secondaryColor={secondaryColor}>
+            
+            <div className="tittleContainer">
             <h3>{name}</h3>
+            <div className="tittleBorder"></div>
+            </div>
+
 
             <ul className="teamMembers">
 

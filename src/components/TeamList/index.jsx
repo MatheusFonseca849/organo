@@ -1,7 +1,7 @@
 import Team from "../Team";
 import { StyledTeamList } from "./teamList.js";
 
-const TeamList = ({ teams, setTeams }) => {
+const TeamList = ({ teams, setTeams, members, setMembers }) => {
 
     return (
 
@@ -17,7 +17,7 @@ const TeamList = ({ teams, setTeams }) => {
 
                 return (
 
-                    <Team key={team.name} name={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor}/>
+                    <Team key={team.name} name={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor} members={members} setMembers={setMembers}/>
 
                 )
 

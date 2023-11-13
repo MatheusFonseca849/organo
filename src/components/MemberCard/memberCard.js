@@ -5,6 +5,7 @@ export const StyledMemberCard = styled.li`
 width: 272px;
 height: 262px;
 background-color: var(--color-grey-8);
+border-radius: 0 0 8px 8px;
 
 .imgContainer{
 
@@ -15,6 +16,7 @@ background-color: ${({primaryColor}) => primaryColor};
 height: 35%;
 position: relative;
 margin-bottom: 64px;
+border-radius: 8px 8px 0 0;
 
 }
 

@@ -36,17 +36,18 @@ export const GlobalRoot = createGlobalStyle`
     --padding-form: 16px;
     --padding-input: 12px;
     --padding-button: 16px;
+    --padding-team-list: 24px 16px;
 
     --margin-form: 16px;
     --margin-tittle: 12px;
-    --margin-tittle-container: 16px;
+    --margin-tittle-container: 32px;
 
     --input-shadow: 5px 5px 8px 1px rgba(66, 68, 90, 0.10);
 
     --radius-default: 8px;
     --radius-input: 4px;
     --radius-button: 6px;
-    --radius-tittle-border: 4px;
+    --radius-tittle-border: 5px;
 
     --gap-default: 16px;
     --gap-main: 16px;

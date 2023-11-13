@@ -64,7 +64,7 @@ function App() {
     <main>
       <Header/>
       <Form submitMember={member => submitNewMember(member)} teamNames={teams.map(team => team.name)}/>
-      <TeamList teams={teams} setTeams={setTeams}/>
+      <TeamList teams={teams} setTeams={setTeams} members={members} setMembers={setMembers}/>
       
     </main>
   )

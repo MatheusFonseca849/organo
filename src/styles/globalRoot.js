@@ -22,20 +22,42 @@ export const GlobalRoot = createGlobalStyle`
     --font-family-prata:'prata', sans-serif;
     --font-family-montserrat: 'montserrat', sans-serif;
 
-    --font-size-title: 46px;
-    --font-size-subtitle: 36px;
-    --font-size-0: 40px;
-    --font-size-1: 32px;
-    --font-size-2: 18px;
+    --font-size-title: 2.875rem; /* 46px */
+    --font-size-subtitle: 2.25rem; /* 36px */
+    --font-size-0: 2.0rem; /* 40px */
+    --font-size-1: 2rem; /* 32px */
+    --font-size-2: 1.125rem; /* 18px */
     
     --font-weight-0: 700;
-    --font-weight-1: 400;
+    --font-weight-1: 500;
+    --font-weight-2: 400;
 
     --padding-title: 24px 0;
+    --padding-form: 16px;
+    --padding-input: 12px;
+    --padding-button: 16px;
+    --padding-team-list: 24px 16px;
 
-    --input-shadow: 0px 3px 12px 1px rgba(66, 68, 90, 0.25);
+    --margin-form: 16px;
+    --margin-tittle: 12px;
+    --margin-tittle-container: 32px;
+
+    --input-shadow: 5px 5px 8px 1px rgba(66, 68, 90, 0.10);
 
     --radius-default: 8px;
+    --radius-input: 4px;
+    --radius-button: 6px;
+    --radius-tittle-border: 5px;
+
+    --gap-default: 16px;
+    --gap-main: 16px;
+    --gap-form: 16px;
+    --gap-header: 24px;
+
+    --form-max-width: 860px;
+
+    --width-tittle-border: 64px;
+    --height-tittle-border: 4px;
 
 
 }

@@ -1,17 +1,33 @@
-import { Team } from "../Team";
+import Team from "../Team";
+import { StyledTeamList } from "./teamList.js";
 
-export const TeamList = () => {
+const TeamList = ({ teams, setTeams, members, setMembers }) => {
 
     return (
 
-        <section>
-            <h2>Minha organização</h2>
+        <StyledTeamList>
 
-            <Team/>
-            
+            <div className="tittleContainer">
+                <h2>Minha organização</h2>
 
-        </section>
+                <div className="teamListBorder"></div>
+            </div>
+
+            {teams.map((team) => {
+
+                return (
+
+                    <Team key={team.name} name={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor} members={members} setMembers={setMembers}/>
+
+                )
+
+            })}
+
+
+        </StyledTeamList>
 
     )
 
 }
+
+export default TeamList

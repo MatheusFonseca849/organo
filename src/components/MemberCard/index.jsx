@@ -3,7 +3,7 @@ import { StyledMemberCard } from "./memberCard.js";
 const MemberCard = ({primaryColor}) => {
 
     return (
-        <StyledMemberCard primaryColor={primaryColor}>
+        <StyledMemberCard $primaryColor={primaryColor}>
             <div className="imgContainer">
                 <img src="./src/assets/mockImg.jpeg" alt="mockImg" />
             </div>

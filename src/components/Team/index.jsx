@@ -3,7 +3,6 @@ import MemberCard from "../MemberCard";
 
 const Team = ({name, primaryColor, secondaryColor, team,  teamMembers, setMembers}) => {
 
-    console.log(team)
     return (
     
      <StyledTeam $secondaryColor={secondaryColor}>

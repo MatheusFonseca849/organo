@@ -1,11 +1,11 @@
 import { StyledTeam } from "./team.js";
 import MemberCard from "../MemberCard";
 
-const Team = ({name, primaryColor, secondaryColor}) => {
+const Team = ({name, primaryColor, secondaryColor, team,  teamMembers, setMembers}) => {
 
     return (
-
-        <StyledTeam $secondaryColor={secondaryColor}>
+    
+     <StyledTeam $secondaryColor={secondaryColor}>
             
             <div className="tittleContainer">
             <h3>{name}</h3>
@@ -14,8 +14,13 @@ const Team = ({name, primaryColor, secondaryColor}) => {
 
 
             <ul className="teamMembers">
+    
+                {
 
-                <MemberCard primaryColor={primaryColor}/>
+                    teamMembers.map((member) => <MemberCard key={name} primaryColor={primaryColor} name={member.name} job={member.job} image={member.image}/>)
+
+                }
+
 
             </ul>
         </StyledTeam>

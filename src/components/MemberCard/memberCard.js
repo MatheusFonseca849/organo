@@ -12,7 +12,7 @@ border-radius: 0 0 8px 8px;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: ${({primaryColor}) => primaryColor};
+background-color: ${({$primaryColor}) => $primaryColor};
 height: 35%;
 position: relative;
 margin-bottom: 64px;

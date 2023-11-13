@@ -1,15 +1,16 @@
 import { StyledMemberCard } from "./memberCard.js";
 
-const MemberCard = ({primaryColor}) => {
+const MemberCard = ({primaryColor, name, job, image}) => {
 
     return (
-        <StyledMemberCard primaryColor={primaryColor}>
+        
+        <StyledMemberCard $primaryColor={primaryColor}>
             <div className="imgContainer">
-                <img src="./src/assets/mockImg.jpeg" alt="mockImg" />
+                <img src={image} alt={name} />
             </div>
             <div className="memberInfo">
-                <h4>Member Name</h4>
-                <span>Member Job</span>
+                <h4>{name}</h4>
+                <span>{job}</span>
             
             </div>
         </StyledMemberCard>

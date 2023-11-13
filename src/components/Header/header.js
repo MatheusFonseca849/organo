@@ -10,6 +10,10 @@ width: 100%;
 
 .firstColumn{
 
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-header);
+
     img{
         width: 150px;
     }
@@ -17,6 +21,7 @@ width: 100%;
     div {
         h1{
             font-size: var(--font-size-title);
+            font-family: var(--font-family-prata);
         }
         
         span{

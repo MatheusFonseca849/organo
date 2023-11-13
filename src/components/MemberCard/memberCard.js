@@ -28,6 +28,27 @@ top: 50%;
 
 }
 
+.memberInfo {
 
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-default);
+
+    h4 {
+
+        font-size: var(--font-size-2);
+        color: var(--color-primary);
+        font-weight: var(--font-weight-0);
+
+    }
+
+    span {
+
+        color: var(--color-grey-0);
+        text-align: center;
+
+    }
+
+}
 
 `

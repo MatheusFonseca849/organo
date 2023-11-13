@@ -1,8 +1,9 @@
+import { StyledMemberCard } from "./memberCard.js";
 
 const MemberCard = ({primaryColor}) => {
 
     return (
-        <li className="MemberCard">
+        <StyledMemberCard primaryColor={primaryColor}>
             <div className="imgContainer">
                 <img src="./src/assets/mockImg.jpeg" alt="mockImg" />
             </div>
@@ -11,7 +12,7 @@ const MemberCard = ({primaryColor}) => {
                 <span>Member Job</span>
             
             </div>
-        </li>
+        </StyledMemberCard>
 
     )
 

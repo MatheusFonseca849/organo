@@ -48,8 +48,10 @@ export const GlobalRoot = createGlobalStyle`
     --radius-button: 6px;
     --radius-tittle-border: 4px;
 
+    --gap-default: 16px;
     --gap-main: 16px;
     --gap-form: 16px;
+    --gap-header: 24px;
 
     --form-max-width: 860px;
 

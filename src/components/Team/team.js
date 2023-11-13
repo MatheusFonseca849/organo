@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const StyledTeam = styled.div`
 text-align: center;
-background-color: ${({ secondaryColor }) => secondaryColor};
+background-color: ${({ $secondaryColor }) => $secondaryColor};
 height: fit-content;
 width: 100vw;
 padding: var(--padding-team-list);

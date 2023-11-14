@@ -69,10 +69,10 @@ function App() {
 
   const submitNewMember = (newMember) => {
 
-    console.log(newMember)
+    // console.log(newMember)
 
     setTeams(teams.map(team => team.name === newMember.team ? { ...team, members:[...members, newMember]} : team))
-    console.log(teams)
+    // console.log(teams)
   }
 
   return (

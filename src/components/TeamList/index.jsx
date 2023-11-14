@@ -14,12 +14,9 @@ const TeamList = ({ teams, setTeams, members, setMembers }) => {
             </div>
 
             {teams.map((team) => {
-
-                // let teamMembers = members.filter(member => member.team === team.name)
-                // console.log(teamMembers)
-
                 return (
                     
+                    team.members.length > 0 &&
                     <Team key={team.name} name={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor} team={team} teamMembers={team.members} setMembers={setMembers}/>
 
                 )
@@ -27,7 +24,6 @@ const TeamList = ({ teams, setTeams, members, setMembers }) => {
             }
             
             )}
-
 
         </StyledTeamList>
 

@@ -1,6 +1,7 @@
 import  Header  from "./components/Header";
 import TeamList from "./components/TeamList";
 import Form from "./components/Form"
+import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
@@ -79,6 +80,7 @@ function App() {
       <Header/>
       <Form submitMember={member => submitNewMember(member)} teamNames={teams.map(team => team.name)}/>
       <TeamList teams={teams} setTeams={setTeams}/>
+      <Footer/>
       
     </main>
   )

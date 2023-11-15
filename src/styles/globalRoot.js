@@ -24,6 +24,7 @@ export const GlobalRoot = createGlobalStyle`
 
     --font-size-title: 2.875rem; /* 46px */
     --font-size-subtitle: 2.25rem; /* 36px */
+    --font-size-footer: 1.25rem; /* 20px */
     --font-size-0: 2.0rem; /* 40px */
     --font-size-1: 2rem; /* 32px */
     --font-size-2: 1.125rem; /* 18px */
@@ -41,6 +42,7 @@ export const GlobalRoot = createGlobalStyle`
     --margin-form: 16px;
     --margin-tittle: 12px;
     --margin-tittle-container: 32px;
+    --margin-footer: 32px;
 
     --input-shadow: 5px 5px 8px 1px rgba(66, 68, 90, 0.10);
 
@@ -57,8 +59,11 @@ export const GlobalRoot = createGlobalStyle`
 
     --form-max-width: 860px;
 
-    --width-tittle-border: 64px;
     --height-tittle-border: 4px;
+    --height-footer: 128px;
+    
+    --width-tittle-border: 64px;
+    --width-logo: 150px;
 
 
 }

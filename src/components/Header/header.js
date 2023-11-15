@@ -15,7 +15,7 @@ width: 100%;
     gap: var(--gap-header);
 
     img{
-        width: 150px;
+        width: var(--width-logo);
     }
 
     div {

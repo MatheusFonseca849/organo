@@ -1,7 +1,8 @@
 import { StyledTeam } from "./team.js";
 import MemberCard from "../MemberCard";
+import { v4 as uuid } from "uuid";
 
-const Team = ({name, primaryColor, secondaryColor, team,  teamMembers, setMembers}) => {
+const Team = ({name, primaryColor, secondaryColor, team,  teamMembers}) => {
 
     return (
     
@@ -17,7 +18,7 @@ const Team = ({name, primaryColor, secondaryColor, team,  teamMembers, setMember
     
                 {
 
-                    teamMembers.map((member) => <MemberCard key={name} primaryColor={primaryColor} name={member.name} job={member.job} image={member.image}/>)
+                    teamMembers.map((member) => <MemberCard key={uuid()} primaryColor={primaryColor} name={member.name} job={member.job} image={member.image}/>)
 
                 }
 

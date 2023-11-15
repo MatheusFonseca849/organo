@@ -1,7 +1,8 @@
 import Team from "../Team";
 import { StyledTeamList } from "./teamList.js";
+import { v4 as uuid } from "uuid";
 
-const TeamList = ({ teams, setTeams, members, setMembers }) => {
+const TeamList = ({ teams, setTeams }) => {
 
     return (
 
@@ -15,9 +16,9 @@ const TeamList = ({ teams, setTeams, members, setMembers }) => {
 
             {teams.map((team) => {
                 return (
-                    
+
                     team.members.length > 0 &&
-                    <Team key={team.name} name={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor} team={team} teamMembers={team.members} setMembers={setMembers}/>
+                    <Team key={uuid()} name={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor} team={team} teamMembers={team.members}/>
 
                 )
 

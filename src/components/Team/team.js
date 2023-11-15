@@ -41,9 +41,9 @@ ul{
 
     width: 100%;
     height: fit-content;
-    display: grid;
-    grid-template-columns: 1;
-    gap: 12px;
+    display: flex;
+    gap: var(--gap-team);
+
 
 }
 

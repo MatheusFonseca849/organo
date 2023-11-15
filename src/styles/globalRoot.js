@@ -36,7 +36,7 @@ export const GlobalRoot = createGlobalStyle`
     --padding-form: 16px;
     --padding-input: 12px;
     --padding-button: 16px;
-    --padding-team-list: 24px 16px;
+    --padding-team-list: 24px 38px;
 
     --margin-form: 16px;
     --margin-tittle: 12px;
@@ -53,6 +53,7 @@ export const GlobalRoot = createGlobalStyle`
     --gap-main: 16px;
     --gap-form: 16px;
     --gap-header: 24px;
+    --gap-team: 28px;
 
     --form-max-width: 860px;
 

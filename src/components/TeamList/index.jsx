@@ -1,7 +1,8 @@
 import Team from "../Team";
 import { StyledTeamList } from "./teamList.js";
+import { v4 as uuid } from "uuid";
 
-const TeamList = ({ teams, setTeams, members, setMembers }) => {
+const TeamList = ({ teams, setTeams }) => {
 
     return (
 
@@ -14,20 +15,16 @@ const TeamList = ({ teams, setTeams, members, setMembers }) => {
             </div>
 
             {teams.map((team) => {
-
-                // let teamMembers = members.filter(member => member.team === team.name)
-                // console.log(teamMembers)
-
                 return (
-                    
-                    <Team key={team.name} name={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor} team={team} teamMembers={team.members} setMembers={setMembers}/>
+
+                    team.members.length > 0 &&
+                    <Team key={uuid()} name={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor} team={team} teamMembers={team.members}/>
 
                 )
 
             }
             
             )}
-
 
         </StyledTeamList>
 

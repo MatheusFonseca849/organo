@@ -60,27 +60,27 @@ function App() {
 
   ])
 
-  // const submitNewMember = (newMember) => {
-  //   console.log(newMember)
-  //   setMembers([...members, newMember])
-  // }
-  
-  
-
   const submitNewMember = (newMember) => {
 
-    setTeams(teams.map(team => team.name === newMember.team ? { ...team, members: [ ...team.members , newMember ]} : team))
-    console.log(teams)
+    setTeams(teams.map(team => team.name === newMember.team ? 
+      
+      { ...team, members: [ ...team.members , newMember ]} 
+
+      : 
+
+      team))
 
   }
 
   return (
+
     <main>
       <Header/>
       <Form submitMember={member => submitNewMember(member)} teamNames={teams.map(team => team.name)}/>
       <TeamList teams={teams} setTeams={setTeams}/>
       
     </main>
+
   )
 }
 

@@ -26,7 +26,7 @@ padding: var(--padding-team-list);
 
     div {
 
-        background-color: ${({ primaryColor }) => primaryColor};
+        background-color: ${({ $primaryColor }) => $primaryColor};
         width: var(--width-tittle-border);
         height: var(--height-tittle-border);
         border-radius: var(--radius-tittle-border);
@@ -41,9 +41,11 @@ ul{
 
     width: 100%;
     height: fit-content;
-    display: grid;
-    grid-template-columns: 1;
-    gap: 12px;
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--gap-team);
+    flex-wrap: wrap;
+    overflow-y: scroll;
 
 }
 

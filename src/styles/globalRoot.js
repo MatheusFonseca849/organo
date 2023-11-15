@@ -53,6 +53,7 @@ export const GlobalRoot = createGlobalStyle`
     --gap-main: 16px;
     --gap-form: 16px;
     --gap-header: 24px;
+    --gap-team: 32px;
 
     --form-max-width: 860px;
 

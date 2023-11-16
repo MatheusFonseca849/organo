@@ -6,6 +6,17 @@ width: 272px;
 height: 262px;
 background-color: var(--color-grey-8);
 border-radius: 0 0 8px 8px;
+position: relative;
+
+button {
+
+position: absolute;
+top: 10px;
+right: 10px;
+z-index: 1;
+background-color: transparent;
+
+}
 
 .imgContainer{
 

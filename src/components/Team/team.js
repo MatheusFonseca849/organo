@@ -26,7 +26,7 @@ padding: var(--padding-team-list);
 
     div {
 
-        background-color: ${({ primaryColor }) => primaryColor};
+        background-color: ${({ $primaryColor }) => $primaryColor};
         width: var(--width-tittle-border);
         height: var(--height-tittle-border);
         border-radius: var(--radius-tittle-border);

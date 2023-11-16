@@ -6,7 +6,7 @@ const Team = ({name, primaryColor, secondaryColor, team,  teamMembers}) => {
 
     return (
     
-     <StyledTeam $secondaryColor={secondaryColor}>
+     <StyledTeam $primaryColor={primaryColor} $secondaryColor={secondaryColor}>
             
             <div className="tittleContainer">
             <h3>{name}</h3>

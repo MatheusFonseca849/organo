@@ -18,7 +18,7 @@ const TeamList = ({ teams, setTeams }) => {
                 return (
 
                     team.members.length > 0 &&
-                    <Team key={uuid()} name={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor} team={team} teamMembers={team.members}/>
+                    <Team key={uuid()} name={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor} team={team} teams={teams} setTeams={setTeams} teamMembers={team.members}/>
 
                 )
 

@@ -3,6 +3,7 @@ import Input from "../Input";
 import SelectInput from "../SelectInput";
 import Button from "../Button"
 import { useState } from "react";
+import { v4 as uuid } from "uuid";
 
 const Form = ({submitMember, teamNames}) => {
 
@@ -17,7 +18,8 @@ const Form = ({submitMember, teamNames}) => {
         name,
         job,
         image,
-        team
+        team,
+        id: uuid()
     })
    }
 
